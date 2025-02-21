@@ -1,0 +1,132 @@
+@import url(normalize.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary_color: rgba(62, 34, 34, 0.836);
+    --primary_darkColor: rgb(42, 30, 30); /*footer*/
+    --secondary-color:rgba(252, 221, 195, 0.933);
+    --mixGray: #ccc;
+    --mixWhite:#f9f9f9;
+
+}
+
+body{
+    background-color: var(--primary_color);
+    font-family: "Montserrat", sans-serif;
+   
+    min-height: 100vh;
+   
+}
+
+.container{
+    max-width: 60em;/*960px*/
+    margin: auto;
+    padding: 1.6em;
+    background-color: var(--secondary-color);
+}
+ .header{
+    display: flex;
+    justify-content: space-between;
+   
+ }
+.header img{
+    border-radius: 30%;
+    width: 4.124em;
+    height: 4.124em;
+}
+.header_nav__links{
+    display: flex;
+    list-style-type: none;
+}
+.header_nav__links a{
+    margin-right: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .6em;
+    border-radius: .312em;
+    color: var(--primary_darkColor);
+    text-transform: uppercase;
+}
+.header_nav__links a:hover{
+    background-color: var(--mixWhite);
+    color: var(--primary_color);
+}
+
+.heroBaner{
+    background-color: var(--primary_darkColor);
+
+}
+.heroBaner_content{
+    display: flex;
+}
+.heroBaner_content__mainTitle{
+    color: var(--mixWhite);
+    margin-right: .4em;
+}
+.heroBaner_content__mainTitle span{
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: block;
+    margin-top: .8em;
+}
+/* The third container with the hot beverage */
+.heroBaner_content img{
+    border-radius: 2em;
+    width: 24em;
+}
+
+.containerBox{
+    display: block;
+    text-align: center;
+    padding: 1.2em;
+}
+.menuBox .menu_coffee{
+    flex-basis: calc(50% - .6em);
+    flex-grow: 1;
+}
+
+.menuHot_title{
+    text-transform: uppercase;
+    margin-bottom: .8em;
+}
+
+.menuBox{
+    max-width: 50em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .6em;
+    padding: .6em;
+    box-shadow: 0 0 14px 2px rgba(0, 0, 0, .6);
+    background-color: white;
+}
+
+.menu_coffee img{
+    max-width: 100%;
+    display: block;
+    height: 10em;
+}
+
+/* customer testimonial */
+.testimonial{
+    border: .0626em solid var(--mixGray);
+    padding: .626em;
+    margin-top: .626em;
+    background-color: var(--mixWhite);
+    border-radius: .312em;
+}
+textarea{
+    margin-bottom: .312em;
+}
+
+@media screen and (max-width: 26.25em) {
+    .heroBaner_content{
+        flex-direction: column;
+    }
+    
+}
