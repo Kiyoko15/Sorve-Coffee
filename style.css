@@ -22,13 +22,15 @@ body{
    
 }
 
-.container{
+.wrapperContainer{
     max-width: 60em;/*960px*/
     margin: auto;
     padding: 1.6em;
     background-color: var(--secondary-color);
+
 }
- .header{
+
+.header{
     display: flex;
     justify-content: space-between;
    
@@ -58,10 +60,18 @@ body{
 
 .heroBaner{
     background-color: var(--primary_darkColor);
+    padding: 1em;
+    box-shadow: 0 0 .876em .126em rgba(0, 0, 0, .6);
+    
+}
+.heroBaner, .menu_hot, .menu_ice, .testimony{
+    border-radius: .25em;
 
 }
 .heroBaner_content{
     display: flex;
+    justify-content: space-between;
+    
 }
 .heroBaner_content__mainTitle{
     color: var(--mixWhite);
@@ -75,6 +85,14 @@ body{
     margin-top: .8em;
 }
 /* The third container with the hot beverage */
+
+.menuHot_title{
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+.menuHot_title{
+    text-transform: uppercase;
+}
 .heroBaner_content img{
     border-radius: 2em;
     width: 24em;
@@ -89,14 +107,14 @@ body{
     flex-basis: calc(50% - .6em);
     flex-grow: 1;
 }
-
+/* Hot menu */
 .menuHot_title{
     text-transform: uppercase;
     margin-bottom: .8em;
 }
 
 .menuBox{
-    max-width: 50em;
+    max-width: 60em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -106,11 +124,39 @@ body{
     background-color: white;
 }
 
+.menuBox .menu_coffee{
+    flex-basis: calc(33.3% - .6em);
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+.menu_coffee__content p{
+    background-color: rgba(0, 0, 0, .8);
+    color: var(--mixWhite);
+    padding: .76em;
+    letter-spacing: .40em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .0;
+    transform: translateY(100%);
+    transition: all .4s ease-in-out;
+}
+.menu_coffee:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
 .menu_coffee img{
     max-width: 100%;
     display: block;
     height: 10em;
+    transform: scale(1);
+    transition: all .4s ease-in-out;
 }
+.menu_coffee:hover img{
+    transform: scale(1.4);
+}
+
 
 /* customer testimonial */
 .testimonial{
