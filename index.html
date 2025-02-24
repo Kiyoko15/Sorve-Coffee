@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="wrapperContainer">
-        <header class="header container">
+        <header class="header">
             <img src="pictures/coffee-logo1.jpg" alt="savor's coffee logo">
             <nav class="header_nav">
                 <ul class="header_nav__links">
@@ -25,60 +25,63 @@
     </div>
 
     <div class="wrapperContainer">
-        <section class="heroBaner container">
+        <section class="heroBaner">
             <div class="heroBaner_content">
-                <h1 class="heroBaner_content__mainTitle">The Perfect Brew. Every Time! <span>Savor Coffee</span></h1>
+                <h1 class="heroBaner_content__mainTitle">The Perfect Brew. Every Time. <span>Savor Coffee</span></h1>
                 <img src="pictures/coffee-header.jpg" alt="piscture of a cup of coffee and some beens">
             </div>
         </section>
     </div>
 
     <div class="wrapperContainer" id="menu">
-        <section class="menu_hot container">
-            <div class="containerBox">
-                <h2 class="menuHot_title">Top Coffee</h2>
-                <p>The best way to start your day</p>
-            </div>
+        <section class="menu_hot">
+            <h2 class="menuHot_title">Top Coffee</h2>
+            <p>The best way to start your day</p>
             <div class="menuBox">
                 <article class="menu_coffee">
+                    <img src="pictures/black-coffee.jpg" alt=" Black coffee">
                     <div class="menu_coffee__content">
-                        <img src="pictures/black-coffee.jpg" alt=" Black coffee">
                         <p>Black Coffee</p>
                     </div>
                 </article>
 
                 <article class="menu_coffee">
+                    <img src="pictures/hot-express-coffee.jpg" alt=" Espresso">
                     <div class="menu_coffee__content">
-                        <img src="pictures/capuccino-coffe-cream.jpg" alt=" Capuccino with cream">
+                        <p>Espresso</p>
+                    </div>
+                </article>
+    
+                <article class="menu_coffee">
+                    <img src="pictures/hot-capiccino.jpg" alt=" Capuccino with cream">
+                    <div class="menu_coffee__content">
                         <p>Capuccino with Cream</p>
                     </div>
                 </article>
 
                 <article class="menu_coffee">
+                    <img src="pictures/hot-coffee-with-cocoa.jpg" alt=" Coffee with cocoa">
                     <div class="menu_coffee__content">
-                        <img src="pictures/expresso1.jpg" alt=" Espresso">
-                        <p>Espresso</p>
-                    </div>
-                </article>
-    
-
-                <article class="menu_coffee">
-                    <div class="menu_coffee__content">
-                        <img src="pictures/coffee-cocoa.jpg" alt=" Coffee with cocoa">
                         <p>Coffee with Cocoa and cream</p>
                     </div>
-    
+                </article>
+
+                <article class="menu_coffee">
+                    <img src="pictures/hot-coffee-withCream.jpg" alt=" Coffee with cocoa">
+                    <div class="menu_coffee__content">
+                        <p>Coffee with Cocoa and cream</p>
+                    </div>
                 </article>
             </div>
             
         </section>
 
-        <section class="menu_ice container">
+        <section class="menu_ice">
             <h2 class="menuIce_title">Top Cold Drinks</h2>
             <p>Taste the Difference Quality Makes</p>
             <div class="menuBox">
                 <article class="menu_coffee">
-                    <img src="pictures/coffee-with-iceCream.jpg" alt="coffee with ice cream">
+                    <img src="pictures/ice-affogato1.jpg" alt="coffee with ice cream">
                     <div class="menu_coffee__content">
                         <p>Coffee With Ice Cream</p>
                     </div>
@@ -91,7 +94,7 @@
                     </div>
                 </article>
                 <article class="menu_coffee">
-                    <img src="pictures/ice-coffee.jpg" alt="Ice Coffee">
+                    <img src="pictures/ice-coffee-withCream.png" alt="Ice Coffee">
                     <div class="menu_coffee__content">
                         <p>Ice Coffee</p>
                     </div>
@@ -101,62 +104,60 @@
     </div>
 
     <div class="wrapperContainer">
-        
-        <section class="testimony container" >
-            <h2 class="testimonyTitle">The Sorve Coffee Experience, Shared.</h2>
-            <div class="testimonyBox">
-                <textarea id="testimonialInput" placeholder="Write your testimonial here..."></textarea><br>
-                <button onclick="addCustomerTestimonial()">Add my testimonial</button>
-                
-                <div id="testimonials"></div>
-            </div>
-            
-            <article class="testimony">
-                <img src="pictures/testemony1.jpg" alt="costumer's photo">
-                <p>
-                    "Savor Coffee has become my absolute go-to! From the moment you walk in, the atmosphere is warm and inviting – it's the perfect blend of cozy and chic. But it's not just the ambiance; it's the coffee itself. I've tried everything from their classic lattes to their seasonal specials, and each cup is consistently delicious. You can tell they use high-quality beans and their baristas are truly passionate about their craft.
-                    Beyond the coffee, the staff is incredibly friendly and attentive. They remember my usual order, and always take the time to chat, making me feel like a valued regular. And let's not forget the pastries! Their croissants are heavenly.
-                    Savor Coffee isn't just a cafe; it's a little slice of comfort and joy in my day. I highly recommend it to anyone looking for a truly exceptional coffee experience."
-                </p>
-            </article>
-            <article class="testimony">
-                <img src="pictures/testimony2.jpg" alt="costumer's photo">
-                <p>
-                    "As a freelancer, finding a good workspace is crucial. Savor Coffee has become my second office! The Wi-Fi is consistently strong, the seating is comfortable, and the noise level is just right – buzzy enough to feel energized, but not so loud that I can't concentrate. Plus, the coffee is amazing! I can power through my to-do list with a perfectly brewed Americano and a delicious pastry. Savor Coffee has truly become my productivity sanctuary."
-                </p>
-            </article>
-            <article class="testimony">
-                <img src="pictures/testimony3.jpg" alt="costumer's photo">
-                <p>
-                    "I'm always rushing in the mornings, but Savor Coffee makes it easy to grab a fantastic coffee on the go. Their mobile ordering is a lifesaver, and my drink is always ready when I arrive. The staff is incredibly efficient and friendly, even during the morning rush. Their iced lattes are the perfect way to start my day, and they always get my customizations right. Savor Coffee makes my hectic mornings a little brighter!"
+        <h2 class="testimonyTitle">The Sorve Coffee Experience, Shared.</h2>
+        <div class="box">
+            <textarea id="testimonialInput" placeholder="Write your testimonial here..."></textarea><br>
+            <button onclick="addCustomerTestimonial()">Add Testimonial</button>
 
-                </p>
-            </article>
-            <article class="testimony">
-                <img src="pictures/testimony4.jpg" alt="costumer's photo">
-                <p>
-                    "My friends and I love to meet up on the weekends, and Savor Coffee is our favorite spot. The relaxed atmosphere is perfect for catching up, and their specialty drinks are always a hit. We recently tried their seasonal lavender latte, and it was divine! The pastries are also a must-try – especially the scones. It's the perfect place to unwind and enjoy a delicious treat with friends. Savor Coffee has become a cherished part of our weekend routine."
-                </p>
-            </article>
-            <article class="testimony">
-                <img src="pictures/testimony5.jpg" alt="costumer's photo">
-                <p>
-                    "Look, the coffee at Savor Coffee is decent, I'll give them that. But honestly, I'm a bit disappointed. I was hoping for a place where I could really unwind, maybe even stretch out a bit, but the seating is all upright chairs and small tables. There's just no room to get comfortable.
-                    And the food selection? It's all just little pastries and snacks. I was hoping for something more substantial, maybe a sandwich or a salad. I understand it's a coffee shop, but sometimes you want more than a croissant with your latte. If you're looking for a quick caffeine fix and a small treat, it's fine. But if you're looking for a place to relax and have a proper meal, you'll have to look elsewhere."
-                    
-                </p>
-            </article>
-            <article class="testimony">
-                <img src="pictures/testimony6.jpg" alt="costumer's photo">
-                <p>
-                    "I'm a bit of a coffee snob, and I'm always on the hunt for exceptional beans and brewing techniques. Savor Coffee has exceeded my expectations! Their single-origin coffees are expertly roasted and brewed, and the baristas are incredibly knowledgeable and passionate about their craft. I appreciate their attention to detail and their commitment to quality. The pour-over I had last week was one of the best cups of coffee I've ever tasted. Savor Coffee is a true gem for any coffee lover."
-                </p>
-            </article>
+            <div id="testimonials"></div>
 
-        </section>
-
-    </div>
+            <section class="testimony" id="">
     
+                <article class="testimony">
+                    <img src="pictures/testemony1.jpg" alt="costumer's photo">
+                    <p>
+                        "Savor Coffee has become my absolute go-to! From the moment you walk in, the atmosphere is warm and inviting – it's the perfect blend of cozy and chic. But it's not just the ambiance; it's the coffee itself. I've tried everything from their classic lattes to their seasonal specials, and each cup is consistently delicious. You can tell they use high-quality beans and their baristas are truly passionate about their craft.
+                        Beyond the coffee, the staff is incredibly friendly and attentive. They remember my usual order, and always take the time to chat, making me feel like a valued regular. And let's not forget the pastries! Their croissants are heavenly.
+                        Savor Coffee isn't just a cafe; it's a little slice of comfort and joy in my day. I highly recommend it to anyone looking for a truly exceptional coffee experience."
+                    </p>
+                </article>
+                <article class="testimony">
+                    <img src="pictures/testimony2.jpg" alt="costumer's photo">
+                    <p>
+                        "As a freelancer, finding a good workspace is crucial. Savor Coffee has become my second office! The Wi-Fi is consistently strong, the seating is comfortable, and the noise level is just right – buzzy enough to feel energized, but not so loud that I can't concentrate. Plus, the coffee is amazing! I can power through my to-do list with a perfectly brewed Americano and a delicious pastry. Savor Coffee has truly become my productivity sanctuary."
+                    </p>
+                </article>
+                <article class="testimony">
+                    <img src="pictures/testimony3.jpg" alt="costumer's photo">
+                    <p>
+                        "I'm always rushing in the mornings, but Savor Coffee makes it easy to grab a fantastic coffee on the go. Their mobile ordering is a lifesaver, and my drink is always ready when I arrive. The staff is incredibly efficient and friendly, even during the morning rush. Their iced lattes are the perfect way to start my day, and they always get my customizations right. Savor Coffee makes my hectic mornings a little brighter!"
+    
+                    </p>
+                </article>
+                <article class="testimony">
+                    <img src="pictures/testimony4.jpg" alt="costumer's photo">
+                    <p>
+                        "My friends and I love to meet up on the weekends, and Savor Coffee is our favorite spot. The relaxed atmosphere is perfect for catching up, and their specialty drinks are always a hit. We recently tried their seasonal lavender latte, and it was divine! The pastries are also a must-try – especially the scones. It's the perfect place to unwind and enjoy a delicious treat with friends. Savor Coffee has become a cherished part of our weekend routine."
+                    </p>
+                </article>
+                <article class="testimony">
+                    <img src="pictures/testimony5.jpg" alt="costumer's photo">
+                    <p>
+                        "Look, the coffee at Savor Coffee is decent, I'll give them that. But honestly, I'm a bit disappointed. I was hoping for a place where I could really unwind, maybe even stretch out a bit, but the seating is all upright chairs and small tables. There's just no room to get comfortable.
+                        And the food selection? It's all just little pastries and snacks. I was hoping for something more substantial, maybe a sandwich or a salad. I understand it's a coffee shop, but sometimes you want more than a croissant with your latte. If you're looking for a quick caffeine fix and a small treat, it's fine. But if you're looking for a place to relax and have a proper meal, you'll have to look elsewhere."
+                       
+                    </p>
+                </article>
+                <article class="testimony">
+                    <img src="pictures/testimony6.jpg" alt="costumer's photo">
+                    <p>
+                        "I'm a bit of a coffee snob, and I'm always on the hunt for exceptional beans and brewing techniques. Savor Coffee has exceeded my expectations! Their single-origin coffees are expertly roasted and brewed, and the baristas are incredibly knowledgeable and passionate about their craft. I appreciate their attention to detail and their commitment to quality. The pour-over I had last week was one of the best cups of coffee I've ever tasted. Savor Coffee is a true gem for any coffee lover."
+                    </p>
+                </article>
+    
+            </section>
+        </div>
+    </div>
 
     <div class="wrapperContainer" id="socialMedia">
         <a href="#">Facebook</a>
@@ -166,7 +167,7 @@
         <a href="#">LinkedIn</a>
     </div>
     <div class="wrapperContainer" id="contact">
-        <address class="container">
+        <address>
             <p>Tel: +81 00000000</p>
             <p>Email: savor_coffee@outcoming.com</p>
             <p>Chillingham, Alnwick, Northumberland, UK, NE 66 5NJ.</p>
@@ -176,12 +177,10 @@
 
 
     <div class="wrapperContainer">
-        <footer class="pageFooter container">
+        <footer class="pageFooter">
             copyright&copy;reserved to Cinthia Kiyoko Sato
         </footer>
     </div>
-
-
     <script src="script.js"></script>
 </body>
 </html>
