@@ -37,7 +37,7 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-   
+    padding: 2em;
  }
 .header img{
     border-radius: 30%;
@@ -127,6 +127,9 @@ body{
     text-align: center;
     padding-top: 2em;
    
+}
+.contactTitle, .socialMedia_title{
+    text-align: left;
 }
 
 .menuHot_text, .menuIce_text{
@@ -267,6 +270,9 @@ body{
     .heroBaner_content{
         flex-direction: column;
     }
-   
+    .contact_content iframe{
+        width: 300px;
+    }
+
     
 }
