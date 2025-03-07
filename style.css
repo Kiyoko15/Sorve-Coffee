@@ -34,10 +34,30 @@ body{
 
 }
 
+
+/* Menu hamburger */
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+   display: none;
+   cursor: pointer;
+}
+.hamburger i{
+   font-size: 2em;
+}
+/*Header */
+
 .header{
     display: flex;
     justify-content: space-between;
     padding: 2em;
+ }
+ .header_nav__links li{
+    display: inline-block;
  }
 .header img{
     border-radius: 30%;
@@ -47,6 +67,7 @@ body{
 .header_nav__links{
     display: flex;
     list-style-type: none;
+    gap: 1em;
 }
 .header_nav__links a{
     margin-right: 1em;
@@ -61,7 +82,7 @@ body{
     background-color: var(--mixWhite);
     color: var(--primary_color);
 }
-
+/* Banner */
 .heroBaner{
     background-color: var(--primary_darkColor);
     padding: 1em;
@@ -88,7 +109,7 @@ body{
     display: block;
     margin-top: .8em;
 }
-/* The third container with the hot beverage */
+/* The third container with the hot and ice beverage */
 
 .menuHot_title{
     text-align: center;
@@ -119,7 +140,7 @@ body{
 .menuBox img{
     width: 100%;
 }
-/* Hot menu */
+
 .menuHot_title, .menuIce_title, 
 .socialMedia_title, .testimonyTitle, .contactTitle{
     text-transform: uppercase;
@@ -188,10 +209,10 @@ body{
 
 /* customer testimonial */
 .testimonial{
-    border: .0626em solid var(--mixGray);
+    border: none;
     padding: .626em;
     margin-top: .626em;
-    background-color: var(--mixWhite);
+    background-color: var(--secondary-color);
     border-radius: .312em;
 }
 .testimonyTitle{
@@ -224,11 +245,13 @@ body{
     margin-bottom: 1em;
     margin-top: 2em;
 }
+/* Social Media configuration */
 .social_media__container a{
     text-decoration: none;
     color: var(--mixBrown);
     font-weight: 500;
     margin-right: 1em;
+    font-size: 1.2em;
 }
 .contactTitle{
     font-style: normal;
@@ -241,12 +264,12 @@ body{
     font-weight: 500;
 }
 .contact_content iframe{
-    min-width: 908px;
+    width: 56.75em;
     margin: auto;
     outline: 2px solid var(--mixBrown);
     margin-bottom: 0;
 }
-
+ /* Footer */
 .pageFooter{
     background-color: var(--mixBrown);
     padding: 1.4em;
@@ -256,8 +279,8 @@ body{
     outline: 2px solid var(--mixBrown); ;
 }
 
-
-@media screen and (max-width: 26.25em) {
+/* Modifications for mobile 768px */
+@media screen and (max-width: 48em) {
  
     .heroBaner_content{
         flex-direction: column;
@@ -270,9 +293,40 @@ body{
     .heroBaner_content{
         flex-direction: column;
     }
-    .contact_content iframe{
-        width: 300px;
+    .header_nav__links{
+        display: none;
+        flex-direction: column;
+        gap: 1em;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--mixBrown);
+        width: 100%;
+        padding: 1em;
+        box-shadow: 0 4px 2px -2px var(--mixGray);
+    
+    }
+    .header_nav__links.active{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
+    .header_nav__links a{
+        padding: .4em;
+        color: var(--secondary-color);
+        border: 2px solid var(--mixWhite);
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 
-    
+   .contact_content iframe{
+    width: 100%;
+
+   }
+   .social_media__container a{
+    margin-top: 1em;
+    display: inline-block;
+   }
 }
