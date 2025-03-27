@@ -4,115 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savor Coffee</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="links.css">
 </head>
 <body>
     <div class="wrapperContainer">
         <header class="header">
             <img src="pictures/coffee-logo1.jpg" alt="savor's coffee logo">
             <nav class="header_nav">
-                <ul class="header_nav__links">
+                <!-- Menu hamburger -->
+                 <div id="burger" onclick="clickMenu()">
+                    <span class="material-symbols-outlined">
+                        menu
+                        </span>
+                 </div>
+                <ul class="header_nav__links" id="itens">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#socialMedia">Social Media</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <!-- Menu hamburger -->
-                 <div class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
-                 </div>
             </nav>
         </header>
-    </div>
+    
 
-    <div class="wrapperContainer">
+    
         <section class="heroBaner">
             <div class="heroBaner_content">
                 <h1 class="heroBaner_content__mainTitle">The Perfect Brew. Every Time. <span>Savor Coffee</span></h1>
-                <img src="pictures/coffee-header.jpg" alt="piscture of a cup of coffee and some beens">
+                <div class="heroBaner_content__img">
+                    <img src="pictures/coffee-header.jpg" alt="piscture of a cup of coffee and some beens">
+                </div>
             </div>
         </section>
-    </div>
-
-    <div class="wrapperContainer" id="menu">
-        <section class="menu_hot">
-            <h2 class="menuHot_title">Top Coffee</h2>
-            <p class="menuHot_text">The best way to start your day</p>
-            
-            <div class="menuBox">
-                <article class="menu_coffee">
-                    <img src="pictures/black-coffee.jpg" alt=" Black coffee">
-                    <div class="menu_coffee__content">
-                        <p>Black Coffee $2.56</p>
-                    </div>
-                </article>
-
-                <article class="menu_coffee">
-                    <img src="pictures/hot-express-coffee.jpg" alt=" Espresso">
-                    <div class="menu_coffee__content">
-                        <p>Espresso $4.50</p>
-                    </div>
-                </article>
     
-                <article class="menu_coffee">
-                    <img src="pictures/hot-capiccino.jpg" alt=" Capuccino with cream">
-                    <div class="menu_coffee__content">
-                        <p>Capuccino with Cream $3.50</p>
-                    </div>
-                </article>
 
-                <article class="menu_coffee">
-                    <img src="pictures/hot-coffee-with-cocoa.jpg" alt=" Coffee with cocoa">
-                    <div class="menu_coffee__content">
-                        <p>Coffee with Cocoa and cream $3.75</p>
-                    </div>
-                </article>
+        <div id="menu">
+            <section class="menu_hot">
+                <h2 class="menuHot_title">Top Coffee</h2>
+                <p class="menuHot_text">The best way to start your day</p>
+                
+                <div class="menuBox">
+                    <article class="menu_coffee">
+                        <img src="pictures/black-coffee.jpg" alt=" Black coffee">
+                        <div class="menu_coffee__content">
+                            <p>Black Coffee $2.56</p>
+                        </div>
+                    </article>
 
-                <article class="menu_coffee">
-                    <img src="pictures/hot-coffee-withCream.jpg" alt=" Coffee with cocoa">
-                    <div class="menu_coffee__content">
-                        <p>Coffee with Cocoa and cream $3.83</p>
-                    </div>
-                </article>
-            </div>
-            
-        </section>
+                    <article class="menu_coffee">
+                        <img src="pictures/hot-express-coffee.jpg" alt=" Espresso">
+                        <div class="menu_coffee__content">
+                            <p>Espresso $4.50</p>
+                        </div>
+                    </article>
+        
+                    <article class="menu_coffee">
+                        <img src="pictures/hot-capiccino.jpg" alt=" Capuccino with cream">
+                        <div class="menu_coffee__content">
+                            <p>Capuccino with Cream $3.50</p>
+                        </div>
+                    </article>
 
-        <section class="menu_ice">
-            <h2 class="menuIce_title">Top Cold Drinks</h2>
-            <p class="menuIce_text">Taste the Difference Quality Makes</p>
-            <div class="menuBox">
-                <article class="menu_coffee">
-                    <img src="pictures/ice-affogato1.jpg" alt="coffee with ice cream">
-                    <div class="menu_coffee__content">
-                        <p>Coffee With Ice Cream $3.29</p>
-                    </div>
-                </article>
+                    <article class="menu_coffee">
+                        <img src="pictures/hot-coffee-with-cocoa.jpg" alt=" Coffee with cocoa">
+                        <div class="menu_coffee__content">
+                            <p>Coffee with Cocoa and cream $3.75</p>
+                        </div>
+                    </article>
 
-                <article class="menu_coffee">
-                    <img src="pictures/ice-capuccino.jpg" alt="Ice Capuccino">
-                    <div class="menu_coffee__content">
-                        <p>Ice Capuccino $3.44</p>
-                    </div>
-                </article>
-                <article class="menu_coffee">
-                    <img src="pictures/ice-coffee-withCream.png" alt="Ice Coffee">
-                    <div class="menu_coffee__content">
-                        <p>Ice Coffee $2.69</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </div>
+                    <article class="menu_coffee">
+                        <img src="pictures/hot-coffee-withCream.jpg" alt=" Coffee with cocoa">
+                        <div class="menu_coffee__content">
+                            <p>Coffee with Cocoa and cream $3.83</p>
+                        </div>
+                    </article>
+                </div>
+                
+            </section>
 
-    <div class="wrapperContainer">
+            <section class="menu_ice">
+                <h2 class="menuIce_title">Top Cold Drinks</h2>
+                <p class="menuIce_text">Taste the Difference Quality Makes</p>
+                <div class="menuBox">
+                    <article class="menu_coffee">
+                        <img src="pictures/ice-affogato1.jpg" alt="coffee with ice cream">
+                        <div class="menu_coffee__content">
+                            <p>Coffee With Ice Cream $3.29</p>
+                        </div>
+                    </article>
+
+                    <article class="menu_coffee">
+                        <img src="pictures/ice-capuccino.jpg" alt="Ice Capuccino">
+                        <div class="menu_coffee__content">
+                            <p>Ice Capuccino $3.44</p>
+                        </div>
+                    </article>
+                    <article class="menu_coffee">
+                        <img src="pictures/ice-coffee-withCream.png" alt="Ice Coffee">
+                        <div class="menu_coffee__content">
+                            <p>Ice Coffee $2.69</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+    
         <h2 class="testimonyTitle">The Sorve Coffee Experience, Shared</h2>
         <div class="box">
-            <textarea id="testimonialInput" placeholder="Write your testimonial here..."></textarea><br>
+            <textarea id="testimonialInput" placeholder="Write your testimonial here..."></textarea>
             <button class="testimonialAdd" onclick="addCustomerTestimonial()">Add Testimonial</button>
 
             <div id="testimonials"></div>
@@ -163,33 +165,33 @@
     
             </section>
         </div>
-    </div>
+    
 
-    <div class="wrapperContainer" id="socialMedia" class="social_media">
-        <h2 class="socialMedia_title">Social Media</h2>
-        <div class="social_media__container">
-            <a href="#">Facebook  <i class="fa-brands fa-square-facebook"></i></a>
-            <a href="#">Instagran  <i class="fa-brands fa-instagram"></i></a>
-            <a href="#">Tik Tok  <i class="fa-brands fa-tiktok"></i></a>
-            <a href="#">Twiiter-X  <i class="fa-brands fa-square-x-twitter"></i></a>
-            <a href="#">LinkedIn  <i class="fa-brands fa-linkedin"></i></a>
-        </div>
-    </div>
-    <div class="wrapperContainer" id="contact">
-        <address class="contact">
-            <h2 class="contactTitle">Contact</h2>
-            <div class="contact_content">
-                <p><i class="fa-solid fa-phone"></i>Tel: +81 00000000</p>
-                <p><i class="fa-regular fa-envelope"></i>  Email: savor_coffee@outcoming.com</p>
-                <p><i class="fa-solid fa-location-dot"></i>  Chillingham, Alnwick, Northumberland, UK, NE 66 5NJ.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1739659766300!6m8!1m7!1s1ui0OmPTcBepyxQlijHtGg!2m2!1d55.52754015788979!2d-1.904120547770603!3f178.66053308677783!4f0!5f0.7820865974627469"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+        <div  id="socialMedia" class="social_media">
+            <h2 class="socialMedia_title">Social Media</h2>
+            <div class="social_media__container">
+                <a href="#">Facebook  <i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#">Instagran  <i class="fa-brands fa-instagram"></i></a>
+                <a href="#">Tik Tok  <i class="fa-brands fa-tiktok"></i></a>
+                <a href="#">Twiiter-X  <i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#">LinkedIn  <i class="fa-brands fa-linkedin"></i></a>
             </div>
-        </address>
-    </div>
+        </div>
+        <div id="contact">
+            <address class="contact">
+                <h2 class="contactTitle">Contact</h2>
+                <div class="contact_content">
+                    <p><i class="fa-solid fa-phone"></i>Tel: +81 00000000</p>
+                    <p><i class="fa-regular fa-envelope"></i>  Email: savor_coffee@outcoming.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>  Chillingham, Alnwick, Northumberland, UK, NE 66 5NJ.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1739659766300!6m8!1m7!1s1ui0OmPTcBepyxQlijHtGg!2m2!1d55.52754015788979!2d-1.904120547770603!3f178.66053308677783!4f0!5f0.7820865974627469" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </address>
+        </div>
 
 
-    <div class="wrapperContainer">
+    
         <footer class="pageFooter">
             copyright&copy;reserved to Cinthia Kiyoko Sato
         </footer>

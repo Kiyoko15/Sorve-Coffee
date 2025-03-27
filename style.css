@@ -42,13 +42,17 @@ body{
     align-items: center;
 }
 
-.hamburger{
-   display: none;
-   cursor: pointer;
+
+#burger{
+    display: none;
+    background-color: transparent;
+    color: var(--primary_color);
+    font-size: 2em;
+    cursor: pointer;
+    padding: .4em;
 }
-.hamburger i{
-   font-size: 2em;
-}
+
+
 /*Header */
 
 .header{
@@ -57,7 +61,7 @@ body{
     padding: 2em;
  }
  .header_nav__links li{
-    display: inline-block;
+    display: block;
  }
 .header img{
     border-radius: 30%;
@@ -121,6 +125,7 @@ body{
     max-width: 100%;
     height: auto;
     object-fit: contain;
+    display: block;
 }
 
 .containerBox{
@@ -182,7 +187,7 @@ body{
     color: var(--mixWhite);
     padding: .76em;
     text-align: center;
-    letter-spacing: .40em;
+    letter-spacing: .10em;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -199,6 +204,7 @@ body{
     max-width: 100%;
     display: block;
     height: 10em;
+    object-fit: cover;
     transform: scale(1);
     transition: all .4s ease-in-out;
 }
@@ -219,7 +225,7 @@ body{
     margin-bottom: 1.6em;
 }
 #testimonialInput{
-    width: 20em;
+    width: 100%;
     height: 8em;
     padding: 1em;
     outline: 3px solid  var(--mixBrown);
@@ -228,9 +234,11 @@ body{
 
 .testimonialAdd{
     background-color: var(--lightBrown) ;
-    padding: .4em;
-    margin-left: 5em;
-    margin-bottom: 2.6em;
+    padding: .8em;
+    margin-left: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
     border-radius: 16px;
     color: var(--mixWhite);
     transition: background-color .2s ease-in-out;
@@ -240,10 +248,17 @@ body{
 }
 .testimony_card img{
     border-radius: 50%;
+    aspect-ratio: 1;
     width: 8em;
     border: 2px solid var(--mixBrown);
-    margin-bottom: 1em;
-    margin-top: 2em;
+    object-fit: cover;
+}
+
+.testimony_card{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    margin: 2em 0;
 }
 /* Social Media configuration */
 .social_media__container a{
@@ -264,10 +279,9 @@ body{
     font-weight: 500;
 }
 .contact_content iframe{
-    width: 56.75em;
     margin: auto;
     outline: 2px solid var(--mixBrown);
-    margin-bottom: 0;
+    margin-bottom: 1.8em;
 }
  /* Footer */
 .pageFooter{
@@ -309,8 +323,14 @@ body{
     .header_nav__links.active{
         display: flex;
     }
-    .hamburger{
+    #burger{
         display: block;
+       
+    }
+    
+    #burger:hover{
+        background-color: var(--mixWhite);
+        
     }
     .header_nav__links a{
         padding: .4em;
@@ -319,6 +339,10 @@ body{
         width: 100%;
         display: block;
         text-align: center;
+    }
+
+    .testimony_card{
+        flex-direction: column;
     }
 
    .contact_content iframe{

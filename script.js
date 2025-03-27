@@ -1,3 +1,21 @@
+function clickMenu(){
+  if(itens.style.display == "block"){
+    itens.style.display = 'none'
+  }else{
+    itens.style.display = 'block'
+  }
+}
+
+
+document.addEventListener('click', function(event) {
+  const burger = document.getElementById('burger')
+  const itens = document.getElementById('itens')
+  if (itens.style.display === "block" && !burger.contains(event.target) && !itens.contains(event.target)) {
+    itens.style.display = 'none'
+  }
+})
+
+
 function addCustomerTestimonial() {
     const testimonialsDiv = document.getElementById('testimonials');
     const testimonialInput = document.getElementById('testimonialInput');
