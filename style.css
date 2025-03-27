@@ -1,5 +1,4 @@
 
-@import url(normalize.css);
 
 *{
     margin: 0;
@@ -72,6 +71,7 @@ body{
     display: flex;
     list-style-type: none;
     gap: 1em;
+    
 }
 .header_nav__links a{
     margin-right: 1em;
@@ -304,9 +304,6 @@ body{
         flex-basis: 100%;
     }
 
-    .heroBaner_content{
-        flex-direction: column;
-    }
     .header_nav__links{
         display: none;
         flex-direction: column;
@@ -318,6 +315,7 @@ body{
         width: 100%;
         padding: 1em;
         box-shadow: 0 4px 2px -2px var(--mixGray);
+        
     
     }
     .header_nav__links.active{

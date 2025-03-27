@@ -15,6 +15,19 @@ document.addEventListener('click', function(event) {
   }
 })
 
+function handleResize() {
+  if (window.innerWidth > 768) {
+      itens.style.display = 'flex'
+  } else {
+      if (itens.style.display !== 'block'){
+         itens.style.display = 'none'
+      }
+  }
+}
+
+// Chame handleResize quando a página carregar e sempre que a janela for redimensionada
+window.addEventListener('load', handleResize);
+window.addEventListener('resize', handleResize);
 
 function addCustomerTestimonial() {
     const testimonialsDiv = document.getElementById('testimonials');
