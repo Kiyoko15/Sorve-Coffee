@@ -43,6 +43,8 @@ body{
 
 
 #burger{
+    /* all: unset; com este comeando eu tiro toda a formatação padrão(user agente), mas nesse caso aqui ele tb tirou o focus que eu acabei de colocar então neste caso eu não quero utiliza-lo */
+    border: none;
     display: none;
     background-color: transparent;
     color: var(--primary_color);
@@ -68,11 +70,15 @@ body{
     height: 4.124em;
 }
 .header_nav__links{
-    display: flex;
+    display: none;
     list-style-type: none;
     gap: 1em;
     
 }
+.header_nav__links.itens--active{
+    display: flex;
+}
+
 .header_nav__links a{
     margin-right: 1em;
     text-decoration: none;
@@ -243,7 +249,7 @@ body{
     color: var(--mixWhite);
     transition: background-color .2s ease-in-out;
 }
-.testimonialAdd:hover{
+.testimonialAdd:hover, .testimonialAdd:focus{
     background-color: rgba(35, 184, 6, 0.753);
 }
 .testimony_card img{
@@ -305,11 +311,10 @@ body{
     }
 
     .header_nav__links{
-        display: none;
         flex-direction: column;
         gap: 1em;
         position: absolute;
-        top: 60px;
+        top: 6.4em;
         left: 0;
         background-color: var(--mixBrown);
         width: 100%;
@@ -318,9 +323,12 @@ body{
         
     
     }
-    .header_nav__links.active{
-        display: flex;
+
+    
+    .header_nav__links .itens--active{
+        display: block;
     }
+
     #burger{
         display: block;
        
