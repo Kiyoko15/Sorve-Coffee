@@ -1,31 +1,33 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --primary_color: rgba(62, 34, 34, 0.836);
-    --primary_darkColor: rgb(42, 30, 30); /*footer*/
-    --secondary-color:rgba(252, 221, 195, 0.933);
+    --primary_darkColor: rgb(42, 30, 30);
+    /*footer*/
+    --secondary-color: rgba(252, 221, 195, 0.933);
     --mixGray: #ccc;
-    --mixWhite:#f9f9f9;
-    --mixBrown:  rgb(98, 23, 23);
+    --mixWhite: #f9f9f9;
+    --mixBrown: rgb(98, 23, 23);
     --lightBrown: rgba(107, 6, 6, 0.666);
+    --lightGreen: rgba(35, 184, 6, 0.753);
     --roundBorder: 4px;
 
 }
 
-body{
+body {
     background-color: var(--primary_color);
     font-family: "Montserrat", sans-serif;
     min-height: 100vh;
-   
+
 }
 
-.wrapperContainer{
-    max-width: 60em;/*960px*/
+.wrapperContainer {
+    max-width: 60em;
+    /*960px*/
     margin: auto;
     padding-left: 1.6em;
     padding-right: 1.6em;
@@ -35,14 +37,14 @@ body{
 
 
 /* Menu hamburger */
-.header_nav{
+.header_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-#burger{
+#burger {
     /* all: unset; com este comeando eu tiro toda a formatação padrão(user agente), mas nesse caso aqui ele tb tirou o focus que eu acabei de colocar então neste caso eu não quero utiliza-lo */
     border: none;
     display: none;
@@ -56,30 +58,34 @@ body{
 
 /*Header */
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
- }
- .header_nav__links li{
+}
+
+.header_nav__links li {
     display: block;
- }
-.header img{
+}
+
+.header img {
     border-radius: 30%;
     width: 4.124em;
     height: 4.124em;
 }
-.header_nav__links{
+
+.header_nav__links {
     display: none;
     list-style-type: none;
     gap: 1em;
-    
+
 }
-.header_nav__links.itens--active{
+
+.header_nav__links.itens--active {
     display: flex;
 }
 
-.header_nav__links a{
+.header_nav__links a {
     margin-right: 1em;
     text-decoration: none;
     font-weight: bold;
@@ -88,45 +94,55 @@ body{
     color: var(--primary_darkColor);
     text-transform: uppercase;
 }
-.header_nav__links a:hover{
+
+.header_nav__links a:hover {
     background-color: var(--mixWhite);
     color: var(--primary_color);
 }
+
 /* Banner */
-.heroBaner{
+.heroBaner {
     background-color: var(--primary_darkColor);
     padding: 1em;
     box-shadow: 0 0 .876em .126em rgba(0, 0, 0, .6);
-    
+
 }
-.heroBaner, .menu_hot, .menu_ice, .testimony{
+
+.heroBaner,
+.menu_hot,
+.menu_ice,
+.testimony {
     border-radius: .25em;
 
 }
-.heroBaner_content{
+
+.heroBaner_content {
     display: flex;
     justify-content: space-between;
-    
+
 }
-.heroBaner_content__mainTitle{
+
+.heroBaner_content__mainTitle {
     color: var(--mixWhite);
     margin-right: .4em;
 }
-.heroBaner_content__mainTitle span{
+
+.heroBaner_content__mainTitle span {
     color: var(--secondary-color);
     font-size: 1.2em;
     text-transform: uppercase;
     display: block;
     margin-top: .8em;
 }
+
 /* The third container with the hot and ice beverage */
 
-.menuHot_title{
+.menuHot_title {
     text-align: center;
     margin-bottom: 1.2em;
 }
 
-.heroBaner_content img{
+.heroBaner_content img {
     border-radius: 2em;
     max-width: 100%;
     height: auto;
@@ -134,43 +150,51 @@ body{
     display: block;
 }
 
-.containerBox{
+.containerBox {
     display: block;
     text-align: center;
     padding: 1.2em;
 }
-.menuBox{
+
+.menuBox {
     box-shadow: 0 0 14px 2px rgba(0, 0, 0, .6);
     background-color: white;
-} 
-.menuBox .menu_coffee{
+}
+
+.menuBox .menu_coffee {
     padding: 1em;
     border-radius: var(--roundBorder);
 }
 
-.menuBox img{
+.menuBox img {
     width: 100%;
 }
 
-.menuHot_title, .menuIce_title, 
-.socialMedia_title, .testimonyTitle, .contactTitle{
+.menuHot_title,
+.menuIce_title,
+.socialMedia_title,
+.testimonyTitle,
+.contactTitle {
     text-transform: uppercase;
     margin-bottom: .8em;
     text-align: center;
     padding-top: 2em;
-   
+
 }
-.contactTitle, .socialMedia_title{
+
+.contactTitle,
+.socialMedia_title {
     text-align: left;
 }
 
-.menuHot_text, .menuIce_text{
+.menuHot_text,
+.menuIce_text {
     text-align: center;
     margin-bottom: 3em;
 }
 
 
-.menuBox{
+.menuBox {
     max-width: 60em;
     display: flex;
     flex-wrap: wrap;
@@ -182,13 +206,14 @@ body{
     border-radius: var(--roundBorder);
 }
 
-.menuBox .menu_coffee{
+.menuBox .menu_coffee {
     flex-basis: calc(33.3% - .6em);
     position: relative;
     overflow: hidden;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
-.menu_coffee p{
+
+.menu_coffee p {
     background-color: rgba(0, 0, 0, .8);
     color: var(--mixWhite);
     padding: .76em;
@@ -202,11 +227,13 @@ body{
     transform: translateY(100%);
     transition: all .4s ease-in-out;
 }
-.menu_coffee:hover p{
+
+.menu_coffee:hover p {
     transform: translateY(0);
     opacity: 1;
 }
-.menu_coffee img{
+
+.menu_coffee img {
     max-width: 100%;
     display: block;
     height: 10em;
@@ -214,32 +241,35 @@ body{
     transform: scale(1);
     transition: all .4s ease-in-out;
 }
-.menu_coffee:hover img{
+
+.menu_coffee:hover img {
     transform: scale(1.4);
 }
 
 
 /* customer testimonial */
-.testimonial{
+.testimonial {
     border: none;
     padding: .626em;
     margin-top: .626em;
     background-color: var(--secondary-color);
     border-radius: .312em;
 }
-.testimonyTitle{
+
+.testimonyTitle {
     margin-bottom: 1.6em;
 }
-#testimonialInput{
+
+#testimonialInput {
     width: 100%;
     height: 8em;
     padding: 1em;
-    outline: 3px solid  var(--mixBrown);
+    outline: 3px solid var(--mixBrown);
     border-radius: var(--roundBorder);
 }
 
-.testimonialAdd{
-    background-color: var(--lightBrown) ;
+.testimonialAdd {
+    background-color: var(--lightBrown);
     padding: .8em;
     margin-left: auto;
     margin-top: 1em;
@@ -249,10 +279,13 @@ body{
     color: var(--mixWhite);
     transition: background-color .2s ease-in-out;
 }
-.testimonialAdd:hover, .testimonialAdd:focus{
-    background-color: rgba(35, 184, 6, 0.753);
+
+.testimonialAdd:hover,
+.testimonialAdd:focus {
+    background-color: var(--lightGreen);
 }
-.testimony_card img{
+
+.testimony_card img {
     border-radius: 50%;
     aspect-ratio: 1;
     width: 8em;
@@ -260,57 +293,82 @@ body{
     object-fit: cover;
 }
 
-.testimony_card{
+.testimony_card {
     display: flex;
     gap: 2em;
     align-items: center;
     margin: 2em 0;
 }
+
+.testimonial-actions {
+    margin-top: 0.5em;
+}
+
+.testimonial-actions button {
+    padding: 0.3em 0.6em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--mixBrown);
+    background-color: var(--lightBrown);
+    color: var(--mixWhite);
+}
+
+.testimonial-actions button:hover {
+    background-color: var(--lightGreen);
+}
+
 /* Social Media configuration */
-.social_media__container a{
+.social_media__container a {
     text-decoration: none;
     color: var(--mixBrown);
     font-weight: 500;
     margin-right: 1em;
     font-size: 1.2em;
 }
-.contactTitle{
+
+.contactTitle {
     font-style: normal;
 }
-.contact_content{
+
+.contact_content {
     display: flex;
     flex-direction: column;
     gap: 1em;
     font-style: normal;
     font-weight: 500;
 }
-.contact_content iframe{
+
+.contact_content iframe {
     margin: auto;
     outline: 2px solid var(--mixBrown);
     margin-bottom: 1.8em;
 }
- /* Footer */
-.pageFooter{
+
+/* Footer */
+.pageFooter {
     background-color: var(--mixBrown);
     padding: 1.4em;
     color: var(--mixWhite);
     font-size: .8em;
     text-align: center;
-    outline: 2px solid var(--mixBrown); ;
+    outline: 2px solid var(--mixBrown);
+    ;
 }
 
 /* Modifications for mobile 768px */
 @media screen and (max-width: 48em) {
- 
-    .heroBaner_content{
+
+    .heroBaner_content {
         flex-direction: column;
     }
-    .menuBox .menu_coffee{
+
+    .menuBox .menu_coffee {
         flex-direction: column;
         flex-basis: 100%;
     }
 
-    .header_nav__links{
+    .header_nav__links {
         flex-direction: column;
         gap: 1em;
         position: absolute;
@@ -320,25 +378,26 @@ body{
         width: 100%;
         padding: 1em;
         box-shadow: 0 4px 2px -2px var(--mixGray);
-        
-    
+
+
     }
 
-    
-    .header_nav__links .itens--active{
+
+    .header_nav__links .itens--active {
         display: block;
     }
 
-    #burger{
+    #burger {
         display: block;
-       
+
     }
-    
-    #burger:hover{
+
+    #burger:hover {
         background-color: var(--mixWhite);
-        
+
     }
-    .header_nav__links a{
+
+    .header_nav__links a {
         padding: .4em;
         color: var(--secondary-color);
         border: 2px solid var(--mixWhite);
@@ -347,16 +406,17 @@ body{
         text-align: center;
     }
 
-    .testimony_card{
+    .testimony_card {
         flex-direction: column;
     }
 
-   .contact_content iframe{
-    width: 100%;
+    .contact_content iframe {
+        width: 100%;
 
-   }
-   .social_media__container a{
-    margin-top: 1em;
-    display: inline-block;
-   }
+    }
+
+    .social_media__container a {
+        margin-top: 1em;
+        display: inline-block;
+    }
 }
